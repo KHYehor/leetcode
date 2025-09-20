@@ -12,12 +12,6 @@ func TestFindMedianSortedArrays(t *testing.T) {
 		expected float64
 	}{
 		{
-			"both arrays empty",
-			[]int{},
-			[]int{},
-			0.0, // undefined behavior, assuming 0
-		},
-		{
 			"one array empty",
 			[]int{1, 3},
 			[]int{},

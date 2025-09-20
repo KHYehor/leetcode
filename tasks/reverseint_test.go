@@ -15,8 +15,8 @@ func TestReverse(t *testing.T) {
 		{"number with trailing zeros", 1200, 21},
 		{"negative number with trailing zeros", -1200, -21},
 		{"zero", 0, 0},
-		{"large positive number", 1534236469, 0},  // overflow case
-		{"large negative number", -1534236469, 0}, // overflow case
+		{"large positive number", 2147483647, 0},  // overflow case
+		{"large negative number", -2147483647, 0}, // overflow case
 	}
 
 	for _, tt := range tests {

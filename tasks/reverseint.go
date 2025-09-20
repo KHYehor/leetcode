@@ -4,7 +4,7 @@ import "strconv"
 
 func reverse(x int) int {
 	// Check for 32+ bit int
-	if x>>31 != 0 && x>>31 != -1 {
+	if x <= -2147483647 || x >= 2147483647 {
 		return 0
 	}
 
